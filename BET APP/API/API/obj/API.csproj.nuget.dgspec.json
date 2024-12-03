@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\greno\\RiderProjects\\API\\API\\API.csproj": {}
+    "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\greno\\RiderProjects\\API\\API\\API.csproj": {
+    "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\greno\\RiderProjects\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\greno\\RiderProjects\\API\\API\\API.csproj",
+        "projectPath": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj",
         "packagesPath": "C:\\Users\\greno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\greno\\RiderProjects\\API\\API\\obj\\",
+        "outputPath": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.1, )"
             }
           },
           "imports": [
