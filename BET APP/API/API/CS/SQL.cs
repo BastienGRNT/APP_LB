@@ -4,7 +4,8 @@ namespace API;
 
 public class Sql
 {
-    public static NpgsqlConnection ConnectPostgreSql()
+    
+    public static NpgsqlConnection ConnectSql()
     {
         string host = "51.75.78.44";
         string port = "5432";
@@ -18,4 +19,5 @@ public class Sql
         connection.Open();
         return connection;
     }
+    
 }
