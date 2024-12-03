@@ -2,9 +2,8 @@
 
 namespace API;
 
-public class Sql
+public class SQL_Connection
 {
-    
     public static NpgsqlConnection ConnectSql()
     {
         string host = "51.75.78.44";
@@ -19,5 +18,4 @@ public class Sql
         connection.Open();
         return connection;
     }
-    
 }
