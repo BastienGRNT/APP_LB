@@ -13,7 +13,7 @@ public class TableAdd
             {
                 connection.Open();
 
-                string AjouterUnLogin = "INSERT INTO login (Pseudo, AdresseMail) VALUES (@Pseudo, @AdresseMail)";
+                string AjouterUnLogin = "INSERT INTO login (Pseudo, AdresseMail) VALUES (@Pseudo, @AdresseMail);";
 
                 using (var command = new NpgsqlCommand(AjouterUnLogin, connection))
                 {
