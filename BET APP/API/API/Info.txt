@@ -1,0 +1,14 @@
+﻿VM :
+    IP : 51.75.78.44
+    user : debian
+    password : applicationlb
+ 
+ 
+databaseapi :
+      POSTGRES_PASSWORD=applicationlb
+      POSTGRES_USER=lbapidb
+      POSTGRES_DB=database
+    
+Portainer.io : 
+    user : admin
+    password : applicationlbio
