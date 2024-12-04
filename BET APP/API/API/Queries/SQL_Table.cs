@@ -13,7 +13,7 @@ public class SQL_Table
             {
                 conection.Open();
 
-                string creerLogin = @"CREATE TABLE IF NOT EXISTS Login
+                string creerLogin = @"CREATE TABLE IF NOT EXISTS login
                                         (ID_User SERIAL,
                                         Pseudo VARCHAR(50),
                                         AdresseMail VARCHAR(50),
