@@ -3,7 +3,7 @@ using API.CS.CLASS;
 
 namespace API.CS.BACK;
 
-public class TableAdd
+public class AddLoginSql
 {
     public static string AjouterLogin(Login login)
     {
