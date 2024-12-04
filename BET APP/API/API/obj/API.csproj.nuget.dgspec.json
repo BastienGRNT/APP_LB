@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj": {}
+    "C:\\Users\\lducrocq\\RiderProjects\\BET_APP\\BET APP\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj": {
+    "C:\\Users\\lducrocq\\RiderProjects\\BET_APP\\BET APP\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\lducrocq\\RiderProjects\\BET_APP\\BET APP\\API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\greno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\obj\\",
+        "projectPath": "C:\\Users\\lducrocq\\RiderProjects\\BET_APP\\BET APP\\API\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\lducrocq\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lducrocq\\RiderProjects\\BET_APP\\BET APP\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\greno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lducrocq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\lducrocq\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
