@@ -20,7 +20,10 @@ public class TableAdd
             {
                 command.Parameters.AddWithValue("@Pseudo", Login.Pseudo);
                 command.Parameters.AddWithValue("@AdresseMail", Login.AdresseMail);
+                
+                command.ExecuteNonQuery()
             }
         }
     }
 }
+*/
