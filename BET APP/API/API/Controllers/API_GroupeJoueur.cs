@@ -18,7 +18,7 @@ namespace API.Controllers
                 return BadRequest("Merci de renseigner quelque chose.");
             }
             
-            string resultat = AddGroupeJoueurSql.GroupeJoueur(groupejoueur);
+            string resultat = AddGroupeJoueurSql.AjouterGroupeJoueur(groupejoueur);
             if (resultat == "Joueur ajouté avec succès au groupe")
             {
                 return Ok(resultat);
