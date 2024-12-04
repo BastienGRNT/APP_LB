@@ -91,4 +91,27 @@ public class SQL_Table
             return $"Erreur: {e.Message}";
         }
     }
+    
+    public static string GoupeJoueurTable()
+    {
+        try
+        {
+            using (var conection = SQL_Connection.ConnectSql())
+            {
+                conection.Open();
+                
+                string CreerAmis = @"";
+                
+                using (var command = new NpgsqlCommand(CreerAmis, conection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+            return "Table groupejoueur créer avec succes";
+        }
+        catch (Exception ex)
+        {
+            return $"Erreur: {ex.Message}";
+        }
+    }
 }
