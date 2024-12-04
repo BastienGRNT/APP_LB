@@ -113,3 +113,6 @@ C:\Users\lducrocq\RiderProjects\BET_APP\BET APP\API\API\obj\Debug\net9.0\API.pdb
 C:\Users\lducrocq\RiderProjects\BET_APP\BET APP\API\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 C:\Users\lducrocq\RiderProjects\BET_APP\BET APP\API\API\obj\Debug\net9.0\ref\API.dll
 C:\Users\greno\Documents\BET_APP\BET APP\API\API\bin\Debug\net9.0\Controllers\API_Groupe.cs
+C:\Users\BASTIEN\Documents\BET_APP\BET APP\API\API\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\BASTIEN\Documents\BET_APP\BET APP\API\API\bin\Debug\net9.0\DotNetEnv.dll
+C:\Users\BASTIEN\Documents\BET_APP\BET APP\API\API\bin\Debug\net9.0\Sprache.dll

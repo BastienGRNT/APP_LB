@@ -1,21 +1,25 @@
 ﻿using Npgsql;
+using DotNetEnv;
 
-namespace API;
-
-public class SQL_Connection
+namespace API
 {
-    public static NpgsqlConnection ConnectSql()
+    public class SQL_Connection
     {
-        string host = "51.75.78.44";
-        string port = "5432";
-        string database = "database";
-        string username = "cacaboudin";
-        string password = "parisapp";
+        public static NpgsqlConnection ConnectSql()
+        {
+            Env.Load();
 
-        var connectionString = $"Host={host};Port={port};Database={database};Username={username};Password={password};";
+            string host = Env.GetString("DB_HOST");
+            string port = Env.GetString("DB_PORT");
+            string database = Env.GetString("DB_NAME");
+            string username = Env.GetString("DB_USER");
+            string password = Env.GetString("DB_PASSWORD");
 
-        var connection = new NpgsqlConnection(connectionString);
-        connection.Open();
-        return connection;
+            var connectionString = $"Host={host};Port={port};Database={database};Username={username};Password={password};";
+
+            var connection = new NpgsqlConnection(connectionString);
+            connection.Open();
+            return connection;
+        }
     }
 }
