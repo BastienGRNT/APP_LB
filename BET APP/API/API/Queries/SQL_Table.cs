@@ -24,6 +24,7 @@ public class SQL_Table
                     command.ExecuteNonQuery();
                 }
             }
+            Console.WriteLine("OKKKKK");
             return "Table Login Créer avec succes";
         }
         
@@ -32,5 +33,34 @@ public class SQL_Table
             return $"Erreur: {ex.Message}";
         }
     }
-    
+
+
+    public static string AmisTable()
+    {
+        try
+        {
+            using (var conection = SQL_Connection.ConnectSql())
+            {
+                conection.Open();
+                
+                string CreerAmis = @"CREATE TABLE Amis(
+                                       ID_User INT,
+                                       ID_User_amis INT,
+                                       PRIMARY KEY(ID_User, ID_User_amis),
+                                       FOREIGN KEY(ID_User) REFERENCES login(ID_User),
+                                       FOREIGN KEY(ID_User_amis) REFERENCES login(ID_User)
+                                       );";
+                
+                using (var command = new NpgsqlCommand(CreerAmis, conection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+            return "Table amis créer avec succes";
+        }
+        catch (Exception ex)
+        {
+            return $"Erreur: {ex.Message}";
+        }
+    }
 }
