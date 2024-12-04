@@ -34,7 +34,6 @@ public class SQL_Table
         }
     }
 
-
     public static string AmisTable()
     {
         try
@@ -61,6 +60,35 @@ public class SQL_Table
         catch (Exception ex)
         {
             return $"Erreur: {ex.Message}";
+        }
+    }
+
+    public static string GroupeTable()
+    {
+        try
+        {
+            using (var conection = SQL_Connection.ConnectSql())
+            {
+                conection.Open();
+                
+                string CreerGroupe = @"CREATE TABLE Groupe(
+                                       id_groupe INT,
+                                       nom_groupe VARCHAR(50) NOT NULL,
+                                       id_createur INT NOT NULL,
+                                       PRIMARY KEY(id_groupe),
+                                       FOREIGN KEY(id_createur) REFERENCES login(ID_User) 
+                                       );";
+
+                using (var command = new NpgsqlCommand(CreerGroupe, conection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+            return ("Table groupe créer avec succes");
+        }
+        catch (Exception e)
+        {
+            return $"Erreur: {e.Message}";
         }
     }
 }
