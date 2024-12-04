@@ -1,4 +1,5 @@
 ﻿using Npgsql;
+using API.CS.CLASS;
 
 namespace API.CS.BACK;
 
