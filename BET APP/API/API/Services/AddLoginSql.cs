@@ -1,4 +1,5 @@
 ﻿using Npgsql;
+using API;
 using API.CS.CLASS;
 
 namespace API.CS.BACK;
@@ -11,7 +12,11 @@ public class AddLoginSql
         {
             using (var connection = SQL_Connection.ConnectSql())
             {
-                connection.Open();
+                if (connection.State != System.Data.ConnectionState.Open)
+                {
+                    connection.Open(); 
+                }
+                
 
                 string AjouterUnLogin = "INSERT INTO public.login (Pseudo, AdresseMail) VALUES (@Pseudo, @AdresseMail);";
 

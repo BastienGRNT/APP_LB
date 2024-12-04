@@ -15,8 +15,8 @@ public class SQL_Table
 
                 string creerLogin = @"CREATE TABLE IF NOT EXISTS login
                                         (ID_User SERIAL,
-                                        Pseudo VARCHAR(50),
-                                        AdresseMail VARCHAR(50),
+                                        Pseudo VARCHAR(50) UNIQUE NOT NULL,
+                                        AdresseMail VARCHAR(50) UNIQUE NOT NULL,
                                         PRIMARY KEY (ID_User));";
 
                 using (var command = new NpgsqlCommand(creerLogin, conection))
