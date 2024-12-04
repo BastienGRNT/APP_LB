@@ -18,7 +18,7 @@ public class AddLoginSql
                 }
                 
 
-                string AjouterUnLogin = "INSERT INTO public.login (Pseudo, AdresseMail) VALUES (@Pseudo, @AdresseMail);";
+                string AjouterUnLogin = @"INSERT INTO public.login (Pseudo, AdresseMail) VALUES (@Pseudo, @AdresseMail);";
 
                 using (var command = new NpgsqlCommand(AjouterUnLogin, connection))
                 {

@@ -17,7 +17,7 @@ public class AddAmisSql
                 }
 
                 string AjouterUnAmis =
-                    "INSERT INTO public.amis (id_user, id_user_amis) VALUES (@id_user, @id_user_amis);";
+                    @"INSERT INTO public.amis (id_user, id_user_amis) VALUES (@id_user, @id_user_amis);";
 
                 using (var commande = new NpgsqlCommand(AjouterUnAmis, connection))
                 {
