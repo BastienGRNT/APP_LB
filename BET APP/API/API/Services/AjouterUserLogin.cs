@@ -16,7 +16,6 @@ namespace API.Services
                 string currentDirectory = Directory.GetCurrentDirectory();
                 string filePath = Path.Combine(currentDirectory, "Services", "CommandsUserLogin.sql");
 
-                // Vérification de l'existence du fichier
                 if (!File.Exists(filePath))
                 {
                     throw new FileNotFoundException($"Le fichier SQL n'a pas été trouvé : {filePath}");
@@ -31,7 +30,6 @@ namespace API.Services
                         connection.Open();
                     }
 
-                    // Vérification de l'identifiant
                     string checkIdentifiantQuery = sqlCommands.Split(';')[0];
                     using (var command = new NpgsqlCommand(checkIdentifiantQuery, connection))
                     {
@@ -44,7 +42,6 @@ namespace API.Services
                         }
                     }
 
-                    // Vérification de l'adresse mail
                     string checkEmailQuery = sqlCommands.Split(';')[1];
                     using (var command = new NpgsqlCommand(checkEmailQuery, connection))
                     {
@@ -57,10 +54,8 @@ namespace API.Services
                         }
                     }
 
-                    // Hashage du mot de passe
                     string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userLogin.mot_de_passe);
 
-                    // Insertion dans la base de données
                     string insertQuery = sqlCommands.Split(';')[2];
                     using (var command = new NpgsqlCommand(insertQuery, connection))
                     {
