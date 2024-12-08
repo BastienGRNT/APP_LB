@@ -8,30 +8,34 @@
 </head>
 <body>
 <div class="container">
-    <h1>Créer un compte</h1>
+    <h1 class="titre">Créer un compte</h1>
     <form class="auth-form" id="register-form">
         <!-- Nom d'utilisateur -->
         <div class="form-group">
             <label for="username">Nom d'utilisateur</label>
             <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur" required>
+            <span class="error-message" id="username-error"></span>
         </div>
 
         <!-- Adresse mail -->
         <div class="form-group">
             <label for="email">Adresse Mail</label>
             <input type="email" id="email" name="email" placeholder="Entrez votre adresse mail" required>
+            <span class="error-message" id="email-error"></span>
         </div>
 
         <!-- Mot de passe -->
         <div class="form-group">
             <label for="password">Mot de passe</label>
             <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            <span class="error-message" id="password-error"></span>
         </div>
 
         <!-- Confirmation du mot de passe -->
         <div class="form-group">
             <label for="confirm-password">Confirmez le mot de passe</label>
             <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+            <span class="error-message" id="confirm-password-error"></span>
         </div>
 
         <!-- Bouton d'inscription -->
