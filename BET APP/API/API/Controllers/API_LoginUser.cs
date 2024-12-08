@@ -13,18 +13,18 @@ public class UserLoginController : ControllerBase
     {
         if (userLogin == null)
         {
-            return BadRequest("Les données utilisateur sont manquantes.");
+            return BadRequest(new { success = false, error = "Les données utilisateur sont manquantes." });
         }
 
         var result = AjouterUserLogin.UserLogin(userLogin);
 
         if (result.StartsWith("Utilisateur ajouté avec succès"))
         {
-            return Ok(result);
+            return Ok(new { success = true, message = result });
         }
         else
         {
-            return BadRequest(result);
+            return BadRequest(new { success = false, error = result });
         }
     }
 }
