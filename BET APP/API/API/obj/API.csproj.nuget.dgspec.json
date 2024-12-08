@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj": {}
+    "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj": {
+    "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\greno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\greno\\Documents\\BET_APP\\BET APP\\API\\API\\obj\\",
+        "projectPath": "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\BASTIEN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
-          "C:\\Users\\greno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\BASTIEN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\BASTIEN\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
