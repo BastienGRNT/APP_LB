@@ -9,15 +9,15 @@ namespace API.Controllers
     public class FriendshipController : ControllerBase
     {
         [HttpPost]
-        public IActionResult AjouterAmi([FromBody] Friendship friendship)
+        public IActionResult AjouterAmi([FromBody] Data_Friendship dataFriendship)
         {
-            if (friendship == null)
+            if (dataFriendship == null)
             {
                 return BadRequest(new { success = false, error = "Les données de l'ami sont manquantes." });
             }
 
-            var service = new FriendshipService();
-            var result = service.AjouterAmi(friendship);
+            var service = new Friendship_Service();
+            var result = service.AjouterAmi(dataFriendship);
 
             if (result == "Ami ajouté avec succès.")
             {

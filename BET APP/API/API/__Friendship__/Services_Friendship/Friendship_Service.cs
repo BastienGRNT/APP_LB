@@ -3,12 +3,12 @@ using API.Data;
 
 namespace API.Services
 {
-    public class FriendshipService
+    public class Friendship_Service
     {
-        public string AjouterAmi(Friendship friendship)
+        public string AjouterAmi(Data_Friendship dataFriendship)
         {
             // Validation : éviter qu'un utilisateur s'ajoute lui-même
-            if (friendship.utilisateur_id == friendship.ami_id)
+            if (dataFriendship.utilisateur_id == dataFriendship.ami_id)
             {
                 return "Vous ne pouvez pas vous ajouter comme ami.";
             }

@@ -6,7 +6,7 @@ namespace API.Services;
 
 public class CheckLoginClass
 {
-    public string CheckLogin(CheckLogin checkLogin)
+    public string UserLogin(Data_Login dataLogin)
     {
         string currentDirectory = Directory.GetCurrentDirectory();
         string filePath = Path.Combine(currentDirectory, "Services", "CommandeCheckLogin.sql");
@@ -28,19 +28,17 @@ public class CheckLoginClass
             string query = sqlCommands.Split(';')[0];
             using (var command = new NpgsqlCommand(query, connection))
             {
-                command.Parameters.AddWithValue("@Identifiant", checkLogin.identifiant);
+                command.Parameters.AddWithValue("@Identifiant", dataLogin.user_id);
 
-                // Exécuter la requête
-                string motDePasseHaché = command.ExecuteScalar() as string;
+                string CheckHashedPassword = command.ExecuteScalar() as string;
 
-                if (string.IsNullOrEmpty(motDePasseHaché))
+                if (string.IsNullOrEmpty(CheckHashedPassword))
                 {
                     return "Erreur : L'identifiant n'existe pas !";
                 }
 
-                // Comparer le mot de passe haché
-                bool motDePasseValide = BCrypt.Net.BCrypt.Verify(checkLogin.mot_de_passe, motDePasseHaché);
-                if (motDePasseValide)
+                bool CorrectPassword = BCrypt.Net.BCrypt.Verify(dataLogin.user_password, CheckHashedPassword);
+                if (CorrectPassword)
                 {
                     return "Mot de passe correct !";
                 }

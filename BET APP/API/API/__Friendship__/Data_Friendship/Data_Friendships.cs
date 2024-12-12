@@ -1,6 +1,6 @@
 ﻿namespace API.Data
 {
-    public class Friendship
+    public class Data_Friendship
     {
         public string utilisateur_id { get; set; } // ID de l'utilisateur
         public string ami_id { get; set; }         // ID de l'ami

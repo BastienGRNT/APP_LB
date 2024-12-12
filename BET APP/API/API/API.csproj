@@ -14,4 +14,9 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Register\" />
+      <Folder Include="__Friendship__\Queries_Friendship\" />
+    </ItemGroup>
+
 </Project>
