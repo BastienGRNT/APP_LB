@@ -19,21 +19,3 @@ namespace API.Services
         }
     }
 }
-
-namespace API.Data
-{
-    public class Friendship
-    {
-        public string utilisateur_id { get; set; }
-        public string ami_id { get; set; }
-        public DateTime date_ajout { get; set; }
-    }
-}
-Tu l'as déj
-
-c parce que jai pas les droit que ca marche pas
-att je vais faire dans le mien pour voir si ca marche
-
-OK
-
-je push

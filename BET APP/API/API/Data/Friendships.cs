@@ -1,11 +1,9 @@
-﻿namespace API.Data;
-
-public class Friendships
+﻿namespace API.Data
 {
-    public int Id { get; set; }
-    public int UserId { get; set; }
-    public int FriendId { get; set; }
-
-    public UserLogin User { get; set; }
-    public UserLogin Friend { get; set; }
+    public class Friendship
+    {
+        public string utilisateur_id { get; set; } // ID de l'utilisateur
+        public string ami_id { get; set; }         // ID de l'ami
+        public DateTime date_ajout { get; set; }   // Date d'ajout
+    }
 }
