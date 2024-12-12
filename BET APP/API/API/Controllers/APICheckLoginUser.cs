@@ -6,7 +6,7 @@ namespace API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CheckLoginUser : ControllerBase
+public class APICheckLoginUser : ControllerBase
 {
     [HttpPost]
     public IActionResult CheckLogin([FromBody] CheckLogin checkLogin)
