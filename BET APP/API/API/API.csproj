@@ -7,9 +7,16 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+        <PackageReference Include="DotNetEnv" Version="3.1.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
         <PackageReference Include="Npgsql" Version="9.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Register\" />
+      <Folder Include="__Friendship__\Queries_Friendship\" />
     </ItemGroup>
 
 </Project>
