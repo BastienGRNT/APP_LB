@@ -5419,20 +5419,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\louis\\.nuget\\packages\\": {}
+    "C:\\Users\\BASTIEN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\louis\\RiderProjects\\APP_LB\\BET APP\\API\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\louis\\RiderProjects\\APP_LB\\BET APP\\API\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\louis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\louis\\RiderProjects\\APP_LB\\BET APP\\API\\API\\obj\\",
+      "projectPath": "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\BASTIEN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BASTIEN\\Documents\\APP\\BET APP\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\louis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\BASTIEN\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -5501,7 +5501,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\louis\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\BASTIEN\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
