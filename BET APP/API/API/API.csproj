@@ -15,8 +15,15 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Register\" />
-      <Folder Include="__Friendship__\Queries_Friendship\" />
+      <Folder Include="____Friendship____\ListFriendship\Controllers_ListFriendship\" />
+      <Folder Include="____Friendship____\ListFriendship\Data_ListFriendship\" />
+      <Folder Include="____Friendship____\ListFriendship\Queries_ListFriendship\" />
+      <Folder Include="____Friendship____\ListFriendship\Services_AcceptFriendship\" />
+      <Folder Include="____Friendship____\_AcceptFriendship_\Controllers_AcceptFriendship\" />
+      <Folder Include="____Friendship____\_AcceptFriendship_\Data_AcceptFriendship\" />
+      <Folder Include="____Friendship____\_AcceptFriendship_\Queries_AcceptFriendship\" />
+      <Folder Include="____Friendship____\_AcceptFriendship_\Services_AcceptFriendship\" />
+      <Folder Include="____Friendship____\__AddFrienship__\Queries_AddFriendship\" />
     </ItemGroup>
 
 </Project>

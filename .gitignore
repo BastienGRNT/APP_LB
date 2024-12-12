@@ -1,1 +1,6 @@
-﻿.env
+﻿# Ignorer les fichiers .env spécifiques
+BET APP/API/API/INIT/DataBase/Connection/database.env
+BET APP/API/API/INIT/KEYS/keys.env
+
+# Ignorer tous les .env dans le projet
+*.env

@@ -9,7 +9,7 @@ public class CheckLoginClass
     public string UserLogin(Data_Login dataLogin)
     {
         string currentDirectory = Directory.GetCurrentDirectory();
-        string filePath = Path.Combine(currentDirectory, "Services", "CommandeCheckLogin.sql");
+        string filePath = Path.Combine(currentDirectory, "_____LOGIN_____", "Queries_Login", "CommandsLogin.sql");
 
         if (!File.Exists(filePath))
         {

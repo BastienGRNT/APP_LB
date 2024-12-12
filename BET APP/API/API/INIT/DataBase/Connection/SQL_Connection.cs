@@ -7,7 +7,8 @@ namespace API
     {
         public static NpgsqlConnection ConnectSql()
         {
-            Env.Load();
+            string envPath = Path.Combine(Directory.GetCurrentDirectory(), "INIT", "DATABASE", "CONNECTION", "database.env");
+            Env.Load(envPath);
 
             string host = Env.GetString("DB_HOST");
             string port = Env.GetString("DB_PORT");

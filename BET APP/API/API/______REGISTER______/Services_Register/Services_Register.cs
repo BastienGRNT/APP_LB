@@ -14,7 +14,8 @@ namespace API.Services
             try
             {
                 string currentDirectory = Directory.GetCurrentDirectory();
-                string filePath = Path.Combine(currentDirectory, "Services", "CommandsUserLogin.sql");
+                string filePath = Path.Combine(currentDirectory, "______REGISTER______", "Queries_Register", "CommandsRegister.sql");
+
 
                 if (!File.Exists(filePath))
                 {
