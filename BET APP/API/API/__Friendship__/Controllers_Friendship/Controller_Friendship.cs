@@ -6,7 +6,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class FriendshipController : ControllerBase
+    public class Controller_Friendship : ControllerBase
     {
         [HttpPost]
         public IActionResult AjouterAmi([FromBody] Data_Friendship dataFriendship)
