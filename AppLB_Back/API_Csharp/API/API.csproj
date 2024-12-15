@@ -15,15 +15,30 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="____Friendship____\ListFriendship\Controllers_ListFriendship\" />
-      <Folder Include="____Friendship____\ListFriendship\Data_ListFriendship\" />
-      <Folder Include="____Friendship____\ListFriendship\Queries_ListFriendship\" />
-      <Folder Include="____Friendship____\ListFriendship\Services_AcceptFriendship\" />
-      <Folder Include="____Friendship____\_AcceptFriendship_\Controllers_AcceptFriendship\" />
-      <Folder Include="____Friendship____\_AcceptFriendship_\Data_AcceptFriendship\" />
-      <Folder Include="____Friendship____\_AcceptFriendship_\Queries_AcceptFriendship\" />
-      <Folder Include="____Friendship____\_AcceptFriendship_\Services_AcceptFriendship\" />
-      <Folder Include="____Friendship____\__AddFrienship__\Queries_AddFriendship\" />
+      <Folder Include="____FRIENDSHIP____\ListFriendship\Controllers_ListFriendship\" />
+      <Folder Include="____FRIENDSHIP____\ListFriendship\Data_ListFriendship\" />
+      <Folder Include="____FRIENDSHIP____\ListFriendship\Queries_ListFriendship\" />
+      <Folder Include="____FRIENDSHIP____\ListFriendship\Services_AcceptFriendship\" />
+      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Controllers_AcceptFriendship\" />
+      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Data_AcceptFriendship\" />
+      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Queries_AcceptFriendship\" />
+      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Services_AcceptFriendship\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
     </ItemGroup>
 
 </Project>

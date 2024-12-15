@@ -9,17 +9,17 @@ namespace API.Controllers
     public class Controller_Friendship : ControllerBase
     {
         [HttpPost]
-        public IActionResult AjouterAmi([FromBody] Data_Friendship dataFriendship)
+        public IActionResult AddFriend([FromBody] Data_Friendship dataFriendship)
         {
-            if (dataFriendship == null)
+            if (dataFriendship == null || dataFriendship.utilisateur_id == dataFriendship.ami_id)
             {
                 return BadRequest(new { success = false, error = "Les données de l'ami sont manquantes." });
             }
 
-            var service = new Friendship_Service();
-            var result = service.AjouterAmi(dataFriendship);
+            var service = new Service_Friendship();
+            var result = service.AddFriend(dataFriendship);
 
-            if (result == "Ami ajouté avec succès.")
+            if (result == "Ami ajouté avec succès." || result == "Demande d'amis accepté." || result == "Vous êtes déjà amis.")
             {
                 return Ok(new { success = true, message = result });
             }

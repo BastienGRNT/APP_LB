@@ -6,7 +6,7 @@ namespace API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class UserLoginController : ControllerBase
+public class Controller_Register : ControllerBase
 {
     [HttpPost]
     public IActionResult ApiResgister([FromBody] Data_Register dataRegister)
