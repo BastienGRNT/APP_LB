@@ -12,16 +12,24 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  String? _errorMessage;
 
   void _handleLogin() async {
     final username = _usernameController.text;
     final password = _passwordController.text;
 
+    if (username.isEmpty || password.isEmpty) {
+      setState(() {
+        _errorMessage = 'Veuillez remplir tous les champs';
+      });
+      return;
+    }
+
     final message = await LoginController.login(username, password);
 
-    //TODO : Renvoyer erreur pour les champs vide
-
-    //TODO : Faire affichier l'erreur afficher par l'API en dessous du texteField mot de passe
+    setState(() {
+      _errorMessage = message; // Met à jour le message avec celui de l'API
+    });
 
     print(message);
     print('Username: $username');
@@ -92,17 +100,33 @@ class _LoginPageState extends State<LoginPage> {
   Widget _buildTextField(String hintText, {required TextEditingController controller}) {
     return Container(
       width: 300,
-      child: TextField(
-        controller: controller,
-        obscureText: hintText == 'Mot de passe :', // Masque le texte pour le mot de passe
-        decoration: InputDecoration(
-          hintText: hintText,
-          filled: true,
-          fillColor: Colors.white,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          TextField(
+            controller: controller,
+            obscureText: hintText == 'Mot de passe :', // Masque le texte pour le mot de passe
+            decoration: InputDecoration(
+              hintText: hintText,
+              filled: true,
+              fillColor: Colors.white,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
           ),
-        ),
+          if (hintText == 'Mot de passe :' && _errorMessage != null && _errorMessage != 'Mot de passe correct !') // Affiche l'erreur sous le champ "Mot de passe"
+            Padding(
+              padding: const EdgeInsets.only(top: 5, left: 25),
+              child: Text(
+                _errorMessage!,
+                style: const TextStyle(
+                  color: Colors.red,
+                  fontSize: 12,
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
