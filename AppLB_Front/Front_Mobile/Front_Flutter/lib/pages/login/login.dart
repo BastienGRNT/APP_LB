@@ -38,7 +38,9 @@ class _LoginPageState extends State<LoginPage> {
 
     if (message == 'Mot de passe correct !'){
       print('CACA');
-      MaterialPageRoute(builder: (context) => const HomePage());
+      Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const HomePage()));
     }
   }
 
@@ -89,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _buildTitle() {
     return const Text(
-      'Se connecter !!!',
+      'Se connecter',
       style: TextStyle(
         fontSize: 30,
         fontWeight: FontWeight.bold,

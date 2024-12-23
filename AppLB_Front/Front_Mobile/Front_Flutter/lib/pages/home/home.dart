@@ -21,6 +21,13 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white
           ),
         ),
+        toolbarHeight: 100,
+        centerTitle: true,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(60),
+          ),
+        ),
       ),
     );
   }
