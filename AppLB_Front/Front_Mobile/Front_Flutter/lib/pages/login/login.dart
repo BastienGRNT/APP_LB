@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:Front_Flutter/pages/login/login_controllers.dart';
+import 'package:Front_Flutter/pages/home/home.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -37,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
 
     if (message == 'Mot de passe correct !'){
       print('CACA');
-      //TODO : Redirection vers page d'acceuil !
+      MaterialPageRoute(builder: (context) => const HomePage());
     }
   }
 
