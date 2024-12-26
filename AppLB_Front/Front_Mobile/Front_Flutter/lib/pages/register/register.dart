@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:Front_Flutter/pages/register/register_controllers.dart';
+
+import '../home/home.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -12,6 +15,43 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController = TextEditingController();
+  String? _erreurMessage;
+
+  void _handleRegister() async{
+    final username = _usernameController.text;
+    final email = _emailController.text;
+    final password = _passwordController.text;
+    final confirmPassword = _confirmPasswordController.text;
+
+    if (username.isEmpty || email.isEmpty || password.isEmpty || confirmPassword.isEmpty){
+      setState(() {
+        _erreurMessage = 'Veuillez remplir tout les champs !';
+      });
+      return;
+    }
+
+    if (password != confirmPassword){
+      setState(() {
+        _erreurMessage = 'Veuillez renseignez deux mot de passe identique !';
+      });
+      return;
+    }
+
+    final message = await RegisterController.register(username, email, password);
+
+    setState(() {
+      _erreurMessage = message;
+    });
+
+    if (message == 'Utilisateur ajouté avec succès !'){
+      if(mounted){
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const HomePage()),
+        );
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,13 +65,13 @@ class _RegisterPageState extends State<RegisterPage> {
           children: [
             _buildTitle(),
             const SizedBox(height: 30),
-            _buildTextField('Identifiant :', controller: _usernameController),
+            _buildTextField('Identifiant', controller: _usernameController),
             const SizedBox(height: 15),
-            _buildTextField('Adresse e-mail :', controller: _emailController),
+            _buildTextField('Adresse e-mail', controller: _emailController),
             const SizedBox(height: 15),
-            _buildTextField('Mot de passe :', controller: _passwordController, obscureText: true),
+            _buildTextField('Mot de passe', controller: _passwordController, obscureText: true),
             const SizedBox(height: 15),
-            _buildTextField('Mot de passe :', controller: _confirmPasswordController, obscureText: true),
+            _buildTextField('Mot de passe Vérif', controller: _confirmPasswordController, obscureText: true),
             const SizedBox(height: 25),
             _buildRegisterButton(),
           ],
@@ -75,18 +115,34 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget _buildTextField(String hintText, {required TextEditingController controller, bool obscureText = false}) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25),
-      child: TextField(
-        controller: controller,
-        obscureText: obscureText,
-        decoration: InputDecoration(
-          hintText: hintText,
-          filled: true,
-          fillColor: Colors.white,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          TextField(
+            controller: controller,
+            obscureText: obscureText,
+            decoration: InputDecoration(
+              hintText: hintText,
+              filled: true,
+              fillColor: Colors.white,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
           ),
-        ),
-      ),
+          if(hintText == 'Mot de passe Vérif' && _erreurMessage != null && _erreurMessage != 'Utilisateur ajouté avec succès !')
+            Padding(
+                padding: const EdgeInsets.only(top: 5),
+              child: Text(
+                _erreurMessage!,
+                style: const TextStyle(
+                  color: Colors.red,
+                  fontSize: 12,
+                ),
+              ),
+            )
+        ],
+      )
     );
   }
 
@@ -95,7 +151,7 @@ class _RegisterPageState extends State<RegisterPage> {
       width: 200,
       child: ElevatedButton(
         onPressed: () {
-          print('Créer un compte cliqué');
+          _handleRegister();
         },
         child: const Text('Créer un compte'),
       ),

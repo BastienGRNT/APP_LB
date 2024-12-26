@@ -33,10 +33,12 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     if (message == 'Mot de passe correct !') {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const HomePage()),
-      );
+      if(mounted){
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const HomePage()),
+        );
+      }
     }
   }
 
