@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:Front_Flutter/pages/register/register_controllers.dart';
-
-import '../home/home.dart';
+import 'package:Front_Flutter/pages/home/home.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -16,6 +15,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController = TextEditingController();
   String? _erreurMessage;
+  bool _isLoading = false;
 
   void _handleRegister() async{
     final username = _usernameController.text;
@@ -37,20 +37,32 @@ class _RegisterPageState extends State<RegisterPage> {
       return;
     }
 
+    setLoading(true);
+
     final message = await RegisterController.register(username, email, password);
 
+    setLoading(false);
     setState(() {
       _erreurMessage = message;
     });
 
     if (message == 'Utilisateur ajouté avec succès !'){
+      setLoading(true); // Active le chargement
+      await Future.delayed(const Duration(seconds: 2));
+      setLoading(false);
       if(mounted){
-        Navigator.pushReplacement(
+        Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const HomePage()),
         );
       }
     }
+  }
+
+  void setLoading(bool value){
+    setState(() {
+      _isLoading = value;
+    });
   }
 
   @override
@@ -59,22 +71,29 @@ class _RegisterPageState extends State<RegisterPage> {
       backgroundColor: const Color(0xFF0C134F),
       appBar: _buildAppBar(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            _buildTitle(),
-            const SizedBox(height: 30),
-            _buildTextField('Identifiant', controller: _usernameController),
-            const SizedBox(height: 15),
-            _buildTextField('Adresse e-mail', controller: _emailController),
-            const SizedBox(height: 15),
-            _buildTextField('Mot de passe', controller: _passwordController, obscureText: true),
-            const SizedBox(height: 15),
-            _buildTextField('Mot de passe Vérif', controller: _confirmPasswordController, obscureText: true),
-            const SizedBox(height: 25),
-            _buildRegisterButton(),
-          ],
+        child: _isLoading
+            ? const CircularProgressIndicator()
+            : SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                _buildTitle(),
+                const SizedBox(height: 30),
+                _buildTextField('Identifiant', controller: _usernameController),
+                const SizedBox(height: 15),
+                _buildTextField('Adresse e-mail', controller: _emailController),
+                const SizedBox(height: 15),
+                _buildTextField('Mot de passe', controller: _passwordController, obscureText: true),
+                const SizedBox(height: 15),
+                _buildTextField('Mot de passe Vérif', controller: _confirmPasswordController, obscureText: true),
+                const SizedBox(height: 25),
+                _buildRegisterButton(),
+              ],
+            ),
+          ),
         ),
       ),
     );
@@ -82,6 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   AppBar _buildAppBar() {
     return AppBar(
+      automaticallyImplyLeading: false,
       backgroundColor: const Color(0xFF5C469C),
       title: const Text(
         'Cezizi',

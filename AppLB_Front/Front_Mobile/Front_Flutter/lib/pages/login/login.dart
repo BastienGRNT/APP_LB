@@ -14,6 +14,7 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   String? _errorMessage;
+  bool _isLoading = false;
 
   void _handleLogin() async {
     final username = _usernameController.text;
@@ -26,15 +27,25 @@ class _LoginPageState extends State<LoginPage> {
       return;
     }
 
+    setLoading(true);
+
     final message = await LoginController.login(username, password);
+
+    setLoading(false);
+    setState(() {
+      _errorMessage = message;
+    });
 
     setState(() {
       _errorMessage = message;
     });
 
     if (message == 'Mot de passe correct !') {
+      setLoading(true);
+      await Future.delayed(const Duration(seconds: 2));
+      setLoading(false);
       if(mounted){
-        Navigator.pushReplacement(
+        Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const HomePage()),
         );
@@ -42,26 +53,40 @@ class _LoginPageState extends State<LoginPage> {
     }
   }
 
+  void setLoading(bool value) {
+    setState(() {
+      _isLoading = value;
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF0C134F),
       appBar: _buildAppBar(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            _buildTitle(),
-            const SizedBox(height: 30),
-            _buildTextField('Identifiant :', controller: _usernameController),
-            const SizedBox(height: 10),
-            _buildTextField('Mot de passe :', controller: _passwordController),
-            const SizedBox(height: 20),
-            _buildLoginButton(),
-            const SizedBox(height: 30),
-            _buildFooter(),
-          ],
+        child: _isLoading
+            ? const CircularProgressIndicator()
+            : SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                _buildTitle(),
+                const SizedBox(height: 30),
+                _buildTextField('Identifiant :', controller: _usernameController),
+                const SizedBox(height: 10),
+                _buildTextField('Mot de passe :', controller: _passwordController),
+                const SizedBox(height: 20),
+                _buildLoginButton(),
+                const SizedBox(height: 30),
+                _buildFooter(),
+              ],
+            ),
+          ),
         ),
       ),
     );
