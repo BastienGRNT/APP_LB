@@ -1,7 +1,7 @@
+import 'package:Front_Flutter/pages/register/register.dart';
 import 'package:flutter/material.dart';
 import 'package:Front_Flutter/pages/login/login_controllers.dart';
 import 'package:Front_Flutter/pages/home/home.dart';
-
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -29,18 +29,14 @@ class _LoginPageState extends State<LoginPage> {
     final message = await LoginController.login(username, password);
 
     setState(() {
-      _errorMessage = message; // Met à jour le message avec celui de l'API
+      _errorMessage = message;
     });
 
-    print(message);
-    print('Username: $username');
-    print('Password: $password');
-
-    if (message == 'Mot de passe correct !'){
-      print('CACA');
+    if (message == 'Mot de passe correct !') {
       Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const HomePage()));
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+      );
     }
   }
 
@@ -59,6 +55,7 @@ class _LoginPageState extends State<LoginPage> {
             _buildTextField('Identifiant :', controller: _usernameController),
             const SizedBox(height: 10),
             _buildTextField('Mot de passe :', controller: _passwordController),
+            const SizedBox(height: 20),
             _buildLoginButton(),
             const SizedBox(height: 30),
             _buildFooter(),
@@ -101,14 +98,14 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _buildTextField(String hintText, {required TextEditingController controller}) {
-    return Container(
-      width: 300,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextField(
             controller: controller,
-            obscureText: hintText == 'Mot de passe :', // Masque le texte pour le mot de passe
+            obscureText: hintText == 'Mot de passe :',
             decoration: InputDecoration(
               hintText: hintText,
               filled: true,
@@ -118,9 +115,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          if (hintText == 'Mot de passe :' && _errorMessage != null && _errorMessage != 'Mot de passe correct !') // Affiche l'erreur sous le champ "Mot de passe"
+          if (hintText == 'Mot de passe :' && _errorMessage != null && _errorMessage != 'Mot de passe correct !')
             Padding(
-              padding: const EdgeInsets.only(top: 5, left: 25),
+              padding: const EdgeInsets.only(top: 5),
               child: Text(
                 _errorMessage!,
                 style: const TextStyle(
@@ -135,8 +132,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _buildLoginButton() {
-    return Container(
-      margin: const EdgeInsets.all(20),
+    return SizedBox(
       width: 200,
       child: ElevatedButton(
         onPressed: _handleLogin,
@@ -158,13 +154,24 @@ class _LoginPageState extends State<LoginPage> {
         ),
         TextButton(
           onPressed: () {
-            print('Créer un compte !');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const RegisterPage()),
+            );
           },
+          style: ButtonStyle(
+            foregroundColor: WidgetStateProperty.all(Colors.white),
+            textStyle: WidgetStateProperty.all(
+              const TextStyle(
+                decoration: TextDecoration.underline,
+              ),
+            ),
+          ),
           child: const Text(
-            'Créer un compte !',
-            style: TextStyle(
-              color: Colors.white,
-              decoration: TextDecoration.underline,
+            'Créer un compte !', style:
+            TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.bold
             ),
           ),
         ),
