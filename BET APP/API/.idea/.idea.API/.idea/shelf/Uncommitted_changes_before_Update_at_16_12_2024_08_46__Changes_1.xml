@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_16_12_2024_08_46_[Changes]1" date="1734335172008" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.API/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2024_08_46_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 16/12/2024 08:46 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.API/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2024_08_46_[Changes]1/API.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="API/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="API/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.API/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2024_08_46_[Changes]1/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="API/obj/Debug/net9.0/API.assets.cache" />
+    <option name="AFTER_PATH" value="API/obj/Debug/net9.0/API.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.API/.idea/shelf/Uncommitted_changes_before_Update_at_16_12_2024_08_46_[Changes]1/API.assets.cache" />
+  </binary>
+</changelist>
