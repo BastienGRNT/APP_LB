@@ -15,30 +15,36 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="____FRIENDSHIP____\ListFriendship\Controllers_ListFriendship\" />
-      <Folder Include="____FRIENDSHIP____\ListFriendship\Data_ListFriendship\" />
-      <Folder Include="____FRIENDSHIP____\ListFriendship\Queries_ListFriendship\" />
-      <Folder Include="____FRIENDSHIP____\ListFriendship\Services_AcceptFriendship\" />
-      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Controllers_AcceptFriendship\" />
-      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Data_AcceptFriendship\" />
-      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Queries_AcceptFriendship\" />
-      <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Services_AcceptFriendship\" />
+        <Folder Include="____FRIENDSHIP____\ListFriendship\Controllers_ListFriendship\" />
+        <Folder Include="____FRIENDSHIP____\ListFriendship\Data_ListFriendship\" />
+        <Folder Include="____FRIENDSHIP____\ListFriendship\Queries_ListFriendship\" />
+        <Folder Include="____FRIENDSHIP____\ListFriendship\Services_AcceptFriendship\" />
+        <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Controllers_AcceptFriendship\" />
+        <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Data_AcceptFriendship\" />
+        <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Queries_AcceptFriendship\" />
+        <Folder Include="____FRIENDSHIP____\_AcceptFriendship_\Services_AcceptFriendship\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+        <Compile Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+        <EmbeddedResource Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+        <Content Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+        <None Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="____Friendship____\__AddFrienship__\Queries_AddFriendship\**" />
+        <Content Include="____FRIENDSHIP____/__AddFriendship__/Queries_AddFriendship/CommandsAddFriendship.sql">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="______REGISTER______/Queries_Register/CommandsRegister.sql">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="_____LOGIN_____/Queries_Login/CommandsLogin.sql">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="INIT/DATABASE/CONNECTION/database.env">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 </Project>
