@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             mot_de_passe: password
         };
 
-        fetch("http://localhost:5125/api/CheckLoginUser", {
+        fetch("http://localhost:5125/api/Controllers_Login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
