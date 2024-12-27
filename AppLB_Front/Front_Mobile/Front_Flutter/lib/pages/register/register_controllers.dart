@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class RegisterController {
-  static const String apiUrl = 'http://192.168.1.15:5125/api/Controller_Register';
+  static const String apiUrl = 'http://51.75.78.44:5000/api/Controller_Register';
 
   static Future<String> register(String username, String email, String password) async {
     try{
