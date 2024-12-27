@@ -1,0 +1,4 @@
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\publish\appsettings.Development.json
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\publish\appsettings.json
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\publish\API.pdb
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\publish\API
