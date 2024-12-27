@@ -56,12 +56,6 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )",
-              "autoReferenced": true
-            },
             "Npgsql": {
               "target": "Package",
               "version": "[9.0.1, )"

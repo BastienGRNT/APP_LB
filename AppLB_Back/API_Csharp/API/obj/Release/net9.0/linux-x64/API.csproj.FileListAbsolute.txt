@@ -39,3 +39,7 @@ C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\obj\Release\net9.0\linu
 C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\obj\Release\net9.0\linux-x64\API.pdb
 C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\obj\Release\net9.0\linux-x64\API.genruntimeconfig.cache
 C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\obj\Release\net9.0\linux-x64\ref\API.dll
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\____FRIENDSHIP____\__AddFriendship__\Queries_AddFriendship\CommandsAddFriendship.sql
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\______REGISTER______\Queries_Register\CommandsRegister.sql
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\_____LOGIN_____\Queries_Login\CommandsLogin.sql
+C:\Users\BASTIEN\Documents\APP\AppLB_Back\API_Csharp\API\bin\Release\net9.0\linux-x64\INIT\DATABASE\CONNECTION\database.env
