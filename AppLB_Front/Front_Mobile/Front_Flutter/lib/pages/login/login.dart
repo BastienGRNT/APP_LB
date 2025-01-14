@@ -41,9 +41,6 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     if (message == 'Mot de passe correct !') {
-      setLoading(true);
-      await Future.delayed(const Duration(seconds: 2));
-      setLoading(false);
       if(mounted){
         Navigator.push(
           context,
@@ -96,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
     return AppBar(
       backgroundColor: const Color(0xFF5C469C),
       title: const Text(
-        'Cezizi',
+        'Page de login',
         style: TextStyle(
           fontSize: 45,
           fontWeight: FontWeight.bold,

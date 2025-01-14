@@ -1,43 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f42aa9b6-eb49-4f6b-9d5d-8197da97cb4c" name="Changes" comment="INTRERFACE LOGIN a modifier afficher connexion reussi attendre unpeu et ensutie chanegr de page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/.idea/.idea.API/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/.idea/.idea.API/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/INIT/DataBase/Connection/SQL_Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/INIT/DataBase/Connection/SQL_Connection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/bin/Debug/net9.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/bin/Debug/net9.0/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/bin/Debug/net9.0/API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/bin/Debug/net9.0/API.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/bin/Debug/net9.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/bin/Debug/net9.0/API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/API.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/API.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/ref/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/ref/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/refint/API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/Debug/net9.0/refint/API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Back/API_Csharp/API/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppLB_Front/Front_Web/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/AppLB_Front/Front_Web/login.js" afterDir="false" />
-    </list>
+    <list default="true" id="f42aa9b6-eb49-4f6b-9d5d-8197da97cb4c" name="Changes" comment="INTRERFACE LOGIN a modifier afficher connexion reussi attendre unpeu et ensutie chanegr de page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,26 +44,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.register.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.register.js.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/greno/Documents/APP&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.login.html.executor": "Run",
+    "JavaScript Debug.register.html.executor": "Run",
+    "Node.js.register.js.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/greno/Documents/APP",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Errors",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

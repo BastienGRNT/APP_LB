@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: const Color(0xFF5C469C),
-        title: const Text('Cezizi',
+        title: const Text('Page Principale',
         style:
           TextStyle(
             fontWeight: FontWeight.bold,

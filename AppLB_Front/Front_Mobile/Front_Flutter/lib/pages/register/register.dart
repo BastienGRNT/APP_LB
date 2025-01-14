@@ -47,9 +47,6 @@ class _RegisterPageState extends State<RegisterPage> {
     });
 
     if (message == 'Utilisateur ajouté avec succès !'){
-      setLoading(true); // Active le chargement
-      await Future.delayed(const Duration(seconds: 2));
-      setLoading(false);
       if(mounted){
         Navigator.push(
           context,
@@ -104,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
       automaticallyImplyLeading: false,
       backgroundColor: const Color(0xFF5C469C),
       title: const Text(
-        'Cezizi',
+        'Créer un compte',
         style: TextStyle(
           fontSize: 45,
           fontWeight: FontWeight.bold,

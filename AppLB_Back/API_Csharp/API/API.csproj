@@ -12,9 +12,11 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
         <PackageReference Include="Npgsql" Version="9.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.0" />
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="INIT\KEYS\" />
         <Folder Include="____FRIENDSHIP____\ListFriendship\Controllers_ListFriendship\" />
         <Folder Include="____FRIENDSHIP____\ListFriendship\Data_ListFriendship\" />
         <Folder Include="____FRIENDSHIP____\ListFriendship\Queries_ListFriendship\" />
